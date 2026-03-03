@@ -1,0 +1,17 @@
+{
+  "name": "tetris-game",
+  "version": "1.0.0",
+  "description": "Classic Tetris game implementation",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo 'No build step needed for static site'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coder-yuanqingwei/tetris-game.git"
+  },
+  "keywords": ["tetris", "game", "javascript", "html5"],
+  "author": "Yuanqing Wei",
+  "license": "MIT"
+}
