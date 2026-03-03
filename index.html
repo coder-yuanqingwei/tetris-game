@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>经典俄罗斯方块</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel left">
+        <h1>俄罗斯方块</h1>
+        <div class="card">
+          <h2>下一块</h2>
+          <canvas id="next" width="120" height="120" aria-label="下一个方块预览"></canvas>
+        </div>
+        <div class="card tips">
+          <h2>操作</h2>
+          <ul>
+            <li>← →：左右移动</li>
+            <li>↓：软降</li>
+            <li>空格：硬降</li>
+            <li>Z / X / ↑：旋转</li>
+            <li>P：暂停/继续</li>
+            <li>R：重新开始</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="board-wrap">
+        <canvas id="board" width="300" height="600" aria-label="俄罗斯方块游戏棋盘"></canvas>
+        <div id="overlay" class="overlay hidden" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="panel right">
+        <div class="card score">
+          <h2>分数</h2>
+          <p id="score">0</p>
+        </div>
+        <div class="card score">
+          <h2>等级</h2>
+          <p id="level">1</p>
+        </div>
+        <div class="card score">
+          <h2>消除行数</h2>
+          <p id="lines">0</p>
+        </div>
+        <button id="restart" type="button">重新开始</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
